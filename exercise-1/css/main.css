@@ -2,7 +2,7 @@
 see http://stackoverflow.com/questions/6871996/css-two-inline-block-width-50-elements-dont-stack */
 
 .container {
-    font-size: 0;
+    font-size: 0px;
 }
 
 
@@ -12,5 +12,33 @@ see http://stackoverflow.com/questions/6871996/css-two-inline-block-width-50-ele
     box-sizing: border-box;
 }
 
+.wrapper {
+	width: 100%;
+	background-color: #dad9d9;
+	display: inline-block;
+	font-size: 2rem;
+	border: 2px solid white;
+}
+#photo {
+	height: 400px;
+	display: inline;
+	position: relative;
+}
+
+#photo p {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
 
 /* Assign styles here */
+@media screen and (min-width: 768px;){
+	.wrapper {
+		width: 50%;
+	}
+
+	#photo p {
+		display: none;
+	}
+}
+
